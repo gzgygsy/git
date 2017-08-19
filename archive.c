@@ -123,7 +123,7 @@ static int check_attr_export_subst(const struct attr_check *check)
 
 static int should_queue_directories(const struct archiver_args *args)
 {
-	return args->pathspec.has_wildcard;
+	return args->pathspec.nr;
 }
 
 static int write_archive_entry(const unsigned char *sha1, const char *base,
